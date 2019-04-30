@@ -77,7 +77,8 @@ class ExcelFile extends React.Component {
     return sheetData;
   }
 
-  download() {
+    download() {
+        this.props.populate;
     const wb = {
       SheetNames: React.Children.map(
         this.props.children,
